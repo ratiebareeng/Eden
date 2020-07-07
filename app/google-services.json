@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "32609705467",
+    "firebase_url": "https://eden-farm-delivery.firebaseio.com",
+    "project_id": "eden-farm-delivery",
+    "storage_bucket": "eden-farm-delivery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32609705467:android:acefcbe29d99612906bf5e",
+        "android_client_info": {
+          "package_name": "com.example.eden"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32609705467-d291ri24ugej93b187pcf8m24rg9iru4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eden",
+            "certificate_hash": "e6f34e59083bff7e84d7613eeca6bb1628fa1c3c"
+          }
+        },
+        {
+          "client_id": "32609705467-lam2khds28th64rcbujl3stmtglpmf97.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuev883UVqX-iJjm7vs3QYWwlZB2IlAx0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "32609705467-lam2khds28th64rcbujl3stmtglpmf97.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

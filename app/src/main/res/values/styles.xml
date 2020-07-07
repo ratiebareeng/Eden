@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/secondaryColor</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ShapeAppearanceOverlay.NavView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">50%</item>
+        <item name="cornerSizeBottomRight">50%</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+    </style>
+
+    <style name="ThemeOverlay.NavigationVew" parent="">
+        <item name="android:colorControlHighlight" tools:targetApi="lollipop">@android:color/transparent</item>
+    </style>
+
+</resources>

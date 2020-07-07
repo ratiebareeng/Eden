@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="0dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/order_shop_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="16.5sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            android:text="K Fresh Produce" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/order_id_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textSize="15sp"
+                android:text="Order Id"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/order_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textSize="15sp"
+                tools:text="25696587458"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/order_date_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textSize="15sp"
+                android:text="Order Date"
+                app:layout_constraintTop_toBottomOf="@id/order_id_label"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/order_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textSize="15sp"
+                tools:text="23 May 2020"
+                app:layout_constraintTop_toBottomOf="@id/order_id"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/order_status_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textSize="15sp"
+                android:text="Order Status"
+                app:layout_constraintTop_toBottomOf="@id/order_date_label"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/order_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textSize="15sp"
+                tools:text="Order Placed"
+                app:layout_constraintTop_toBottomOf="@id/order_date"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/order_total_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textSize="15sp"
+                android:text="Order Total"
+                app:layout_constraintTop_toBottomOf="@id/order_status_label"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/order_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textSize="15sp"
+                tools:text="P345.90"
+                app:layout_constraintTop_toBottomOf="@id/order_status"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

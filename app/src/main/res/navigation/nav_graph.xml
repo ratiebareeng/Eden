@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.eden.view.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_itemDetailsFragment"
+            app:destination="@id/itemDetailsFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <argument
+            android:name="user"
+            app:argType="com.example.eden.model.User"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.example.eden.view.OrdersFragment"
+        android:label="Orders"
+        tools:layout="@layout/fragment_orders" />
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="com.example.eden.view.BasketFragment"
+        android:label="Basket"
+        tools:layout="@layout/fragment_basket" />
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.eden.view.AuthFragment"
+        android:label="Sign In"
+        tools:layout="@layout/fragment_auth" >
+        <action
+            android:id="@+id/action_signInFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemDetailsFragment"
+        android:name="com.example.eden.view.ItemDetailsFragment"
+        android:label="{itemName}"
+        tools:layout="@layout/fragment_item_details" >
+        <action
+            android:id="@+id/action_itemDetailsFragment_to_ordersFragment"
+            app:destination="@id/ordersFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_itemDetailsFragment_to_basketFragment"
+            app:destination="@id/basketFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+        <argument
+            android:name="itemName"
+            app:argType="string"
+            android:defaultValue="Eden" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactUsFragment"
+        android:name="com.example.eden.view.ContactUsFragment"
+        android:label="Contact Eden"
+        tools:layout="@layout/fragment_contact_us" />
+</navigation>

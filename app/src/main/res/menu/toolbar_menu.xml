@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/basketFragment"
+        android:icon="@drawable/ic_round_shopping_basket_24"
+        android:title="@string/basket_drawer_label"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/ordersFragment"
+        android:icon="@drawable/ic_order_filled"
+        android:title="@string/orders_drawer_label"
+        app:iconTint="@android:color/white"
+        app:showAsAction="ifRoom"
+        />
+
+
+</menu>

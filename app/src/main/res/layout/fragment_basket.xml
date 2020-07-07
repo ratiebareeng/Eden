@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/business_basket_coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGray"
+    tools:context=".view.MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/empty_basket_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingTop="150dp"
+                android:paddingBottom="80dp">
+
+                <ImageView
+                    android:id="@+id/empty_basket_image"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_round_shopping_basket_24"
+                    android:contentDescription="@string/add_to_basket_text"
+                    android:tint="@color/whiteOp"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/empty_basket_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    android:text="@string/basket_empty"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/live_basket_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/user_orders_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    tools:listitem="@layout/layout_basket_item" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/order_total_card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:cardCornerRadius="0dp"
+                    app:elevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:textSize="16.5sp"
+                            android:text="@string/total"
+                            android:layout_weight="2"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+                        <TextView
+                            android:id="@+id/user_orders_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:textSize="16.5sp"
+                            android:gravity="end"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <Button
+                    android:id="@+id/basket_checkout_place_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:textAllCaps="true"
+                    android:text="@string/checkout"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -35,7 +35,6 @@
                 android:id="@+id/user_name_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/user_name_placeholder_text"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
                 />
 
@@ -43,7 +42,6 @@
                 android:id="@+id/user_email_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/user_email_placeholder_text"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
                 />
 

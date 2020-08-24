@@ -33,7 +33,7 @@
     <string name="contact_us">Contact Us</string>
     <string name="call_us">Call</string>
     <string name="email_us">Email</string>
-    <string name="visit_us">Visit</string>
+    <string name="whatsapp">WhatsApp</string>
     <string name="basket_empty">Your basket is empty</string>
     <string name="total">Basket Total</string>
     <string name="checkout">Checkout</string>
@@ -47,4 +47,7 @@
     <string name="email_us_text">Send Us An Email</string>
     <string name="email_subject_text">Subject</string>
     <string name="email_body">Email Body</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="our_combos">Our Combos</string>
+    <string name="our_produce">Our Produce</string>
 </resources>

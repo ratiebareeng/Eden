@@ -65,7 +65,7 @@
             android:defaultValue="Eden" />
     </fragment>
     <fragment
-        android:id="@+id/contactUsFragment"
+        android:id="@+id/email"
         android:name="com.example.eden.view.ContactUsFragment"
         android:label="Contact Eden"
         tools:layout="@layout/fragment_contact_us" />
